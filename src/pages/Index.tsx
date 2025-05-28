@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useAuth } from '../hooks/useAuth';
-import { LoginPage } from '../components/LoginPage';
+import { LandingPage } from '../components/LandingPage';
 import { Layout } from '../components/Layout';
 import { Dashboard } from '../components/Dashboard';
 
@@ -17,7 +17,7 @@ const Index = () => {
   }
 
   if (!user) {
-    return <LoginPage />;
+    return <LandingPage />;
   }
 
   return (
